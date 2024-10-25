@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexible Font</title>
+    <script src="js/flexibleImage_54.js"></script>
+    <link rel='stylesheet' href='./css/flexibleImage_54.css'/>
+</head>
+<body>
+    <div id="page">
+        <div class="blog">
+            <h1 class="lede">Recently in <a href="#">The Bot Blog &raquo;</a>
+            </h1>
+            <div class="main">
+                <h1>Main of the Bot Blog </h1>
+
+                <div class="article">
+                    <div class="date">
+                        <p id="datetime"></p>
+
+                        <script>
+                            // Get current date and time
+                            var now = new Date();
+                            var datetime = now.toLocaleString();
+
+                            // Insert date and time into HTML
+                            document.getElementById("datetime").innerHTML = datetime;
+                        </script>
+                    </div>
+                    <h1>Articles in the main </h1>
+                    <div class="figure">
+                        <p>
+                            <img src="./data/robot.jpg" alt="" />
+                            <img src="./js/ex1.gif" alt="" />
+                            <script>
+                                if (document.getElementById && document.getElementsByTagName) {
+                                    var aImgs = document.getElementsByTagName("img");
+                                    imgSizer.collate(aImgs);
+                                }
+                            </script>
+                            <b class="figcaption">Lo, robot walks</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="other">
+                <h1>Other Information of the Bot Blog </h1>
+                <div class="recent-entries">
+                    <h1>Recent-entries articles </h1>
+                </div>
+            </div>
+            </div>
+    </div>
+
+</body>
+</html>
