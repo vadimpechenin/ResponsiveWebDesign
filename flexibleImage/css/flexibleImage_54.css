@@ -6,7 +6,13 @@
 .blog{
     margin: 0 auto 53px;
     width:  93.75%; /* 900px / 960px */
-    background-color: #FFA07A;
+    /*background-color: #FFA07A; */
+}
+
+.blog{
+    /*background: #F8F5F2 url("file:///D:/JAVA/Programms/ResponsiveWebDesign/flexibleImage/data/blog_bg.png") repeat-y 50% 0;*/
+    /*repeat-y 63.111111111% 0;  568px / 900px*/
+    background: #F8F5F2 url(blog_bg.png) repeat-y 63.111111111% 0; /*568px / 900px*/
 }
 
 .lede{
@@ -54,4 +60,14 @@
 img{
     max-width: 100%;
     width: 100%;
+}
+
+
+.blog .other .recent-entries{
+    overflow: hidden;
+}
+
+.blog .other .recent-entries .other-figure{
+        display: block;
+    max-width: inherit;
 }
