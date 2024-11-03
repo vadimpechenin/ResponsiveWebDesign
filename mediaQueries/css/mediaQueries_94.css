@@ -1,0 +1,122 @@
+#page{
+    margin: 36px auto;
+    width: 90%;
+}
+
+.blog{
+    margin: 0 auto 53px;
+    width:  93.75%; /* 900px / 960px */
+    /*background-color: #FFA07A; */
+}
+
+.blog{
+    /*background: #F8F5F2 url("file:///D:/JAVA/Programms/ResponsiveWebDesign/flexibleImage/data/blog_bg.png") repeat-y 50% 0;*/
+    /*repeat-y 63.111111111% 0;  568px / 900px*/
+    background: #F8F5F2 url(blog_bg.png) repeat-y 63.111111111% 0; /*568px / 900px*/
+}
+
+.lede{
+    background: #000;
+    color: #FFF;
+    font: normal 3.625em/0.9 "Leaque Gothic", "Arial Narrow", Arial, sans-serif; /* 58px / 16px */
+    text-transform: uppercase; /* 48px / 900px */
+}
+@media screen and (max-width: 768px) {
+    #page{
+        position: relative;
+        margin: 20px;
+        width: auto;
+    }
+
+    .blog{
+        margin: 0 0 30px;
+        width: auto;
+    }
+
+
+    .lede{
+        background: #000;
+        color: #FFF;
+        font: normal 1.5em/0.9 Calibri, Candara, Segoe, "Segoe UI",
+        Optima, Arial, Helverica,
+        sans-serif; /* 24px / 16x */
+    }
+}
+.blog .main{
+    float: left;
+    width: 62.888889%; /* 566px / 900px */
+    background-color: #FF6347;
+}
+
+.blog .other{
+    float: right;
+    width: 36.777778%; /* 331px / 900px */
+    background-color: #FFA500;
+}
+
+.blog .main .article{
+    padding: 40px 8.48056537%; /* 48px / 566px */
+    /*width:  83.745583%; /* 474px / 566px */
+    background-color: #FF4500;
+}
+
+.blog .other .recent-entries{
+    margin: 0 auto;
+    width:  69.7885196%; /* 231px / 331px */
+    background-color: #FF8C00;
+}
+
+.blog .main .article .date{
+    float: left;
+    margin-left: -17.0886076%; /* 81px / 474px */
+    width:  14.556962%; /* 69px / 474px */
+    background-color: #FF6347;
+}
+
+.blog .main .article .figure{
+    float: right;
+    margin-bottom:0.5em;
+    margin-left: 2.53164557%; /* 12px / 474px */
+    width: 48.7341772%; /* 231px / 474px */
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+}
+
+
+.blog .other .recent-entries{
+    overflow: hidden;
+}
+
+.blog .other .recent-entries .other-figure{
+        display: block;
+    max-width: inherit;
+}
+
+@media screen and (max-width: 520px) {
+    .other{
+        float: left;
+        width: 30%;
+        font: normal 1.0em/0.9 Calibri, Candara, Segoe, "Segoe UI",
+        Optima, Arial, Helverica;
+    }
+
+    .other h1{
+        clear: left;
+        float: left;
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .blog{
+        width: 49.375%;
+    }
+    .main,
+    .other{
+        float: right;
+        margin: 0 0 40px;
+    }
+}
